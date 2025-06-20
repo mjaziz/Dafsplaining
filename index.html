@@ -1,17 +1,18 @@
-I'll create a podcast landing page for the Daily Weekday Daf Shiur with the provided details, using HTML, CSS, and a clean, modern design with Tailwind CSS for styling. The page will include the podcast description, special mentions, contact info, and links to Apple Podcasts and Spotify.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dafsplaining - Daily Weekday Daf Shiur</title>
+    <link rel="icon" type="image/png" href="Dafsplaining PodcastLogo.png">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans">
     <div class="min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl w-full bg-white shadow-lg rounded-lg p-8">
+            <div class="flex justify-center mb-6">
+                <img src="Dafsplaining PodcastLogo.png" alt="Dafsplaining Logo" class="h-24 w-auto">
+            </div>
             <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">Dafsplaining</h1>
             <h2 class="text-2xl font-semibold text-center text-gray-600 mb-4">Daily Weekday Daf Shiur</h2>
             <p class="text-lg text-gray-700 text-center mb-6">
@@ -24,11 +25,11 @@ I'll create a podcast landing page for the Daily Weekday Daf Shiur with the prov
                 and as always to Matt for technical support.
             </p>
             <div class="flex justify-center space-x-4 mb-6">
-                <a href="https://podcasts.apple.com/us/podcast/dafsplaining/id1502395874" 
+                <a href="https://podcasts.apple.com/us/podcast/dafsplaining/id1502395874"
                    class="bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition">
                     Listen on Apple Podcasts
                 </a>
-                <a href="https://open.spotify.com/show/3sfSQ2hlgM2OSObYGhWGe1" 
+                <a href="https://open.spotify.com/show/3sfSQ2hlgM2OSObYGhWGe1"
                    class="bg-green-600 text-white font-semibold py-2 px-4 rounded hover:bg-green-500 transition">
                     Listen on Spotify
                 </a>
@@ -43,4 +44,3 @@ I'll create a podcast landing page for the Daily Weekday Daf Shiur with the prov
     </div>
 </body>
 </html>
-```
