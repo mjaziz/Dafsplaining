@@ -1,91 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Join Dafsplaining for a daily weekday Daf Shiur at BJSZ in Baltimore, honoring Rav Chaim Zev ben Rav Avraham Aharon Halevi zt”l.">
-  <meta name="keywords" content="Dafsplaining, Daf Shiur, Talmud, Jewish learning, Baltimore, BJSZ">
-  <meta property="og:title" content="Dafsplaining - Daily Weekday Daf Shiur">
-  <meta property="og:description" content="Daily weekday Daf Shiur at BJSZ in Baltimore, dedicated to Rav Chaim Zev ben Rav Avraham Aharon Halevi zt”l.">
-  <meta property="og:image" content="/images/Dafsplaining PodcastLogo.png">
-  <title>Dafsplaining - Daily Weekday Daf Shiur</title>
-  <link rel="icon" type="image/png" href="/images/Dafsplaining PodcastLogo.png">
-  <link rel="stylesheet" href="/path/to/tailwind.css">
-  <style>
-    .fade-in {
-      opacity: 1;
-      transform: translateY(0);
-      transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-    .fade-in:not(.visible) {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daf Yomi with Rabbi Moshe Mustacchi</title>
+    <link rel="icon" type="image/png" href="DAFYOMIMosheMustacchiLOGO.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            line-height: 1.6;
+            color: #34495e;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem;
+            background-color: transparent;
+            text-decoration: none;
+            border: none;
+            transition: opacity 0.3s;
+        }
+        .button:hover {
+            opacity: 0.8;
+        }
+        .logo {
+            max-width: 100%;
+            width: clamp(150px, 30vw, 200px);
+            margin-bottom: 1.5rem;
+        }
+        .button-icon {
+            width: clamp(30px, 5vw, 40px);
+        }
+        @media (max-width: 600px) {
+            .button-container {
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 300px;
+                gap: 0.5rem; /* Reduced gap for mobile */
+            }
+            .button {
+                width: auto;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans">
-  <div id="content" class="fade-in min-h-screen flex flex-col items-center justify-center py-8 px-4 sm:px-6 md:px-8">
-    <div class="max-w-3xl w-full bg-white shadow-lg rounded-lg p-6 sm:p-8">
-      <div class="flex justify-center mb-4 sm:mb-6 transition-transform duration-300 hover:scale-105">
-        <picture>
-          <source srcset="/images/Dafsplaining PodcastLogo.webp" type="image/webp">
-          <img src="/images/Dafsplaining PodcastLogo.png" alt="Dafsplaining Logo" class="h-20 sm:h-24 w-auto" width="96" height="96">
-        </picture>
-      </div>
-      <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-4 sm:mb-6">Dafsplaining</h1>
-      <h2 class="text-xl sm:text-2xl font-semibold text-center text-gray-600 mb-3 sm:mb-4">Daily Weekday Daf Shiur</h2>
-      <p class="text-base sm:text-lg text-gray-700 text-center mb-4 sm:mb-6">
-        Join us for the Daily Weekday Daf Shiur, given at BJSZ in Baltimore at 5:35 AM, 
-        <em>leilui nishmas</em> Rav Chaim Zev ben Rav Avraham Aharon Halevi zt”l, 
-        who always pushed us to learn more and would be astonished by our consistency in his honor.
-      </p>
-      <p class="text-base sm:text-lg text-gray-700 text-center mb-4 sm:mb-6">
-        Special mention to Joseph Dov and Andrew, who carried the shiur during the COVID pandemic of 2020, 
-        and as always to Matt for technical support.
-      </p>
-      <p class="text-base sm:text-lg text-gray-700 text-center mb-4 sm:mb-6 font-semibold">
-        Subscribe now for daily Talmud learning updates!
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-4 sm:mb-6">
-        <a href="https://podcasts.apple.com/us/podcast/dafsplaining/id1502395874"
-           class="flex items-center justify-center bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300"
-           aria-label="Listen to Dafsplaining on Apple Podcasts">
-          <picture>
-            <source srcset="/images/applepodcastlogo.webp" type="image/webp">
-            <img src="/images/applepodcastlogo.png" alt="Apple Podcasts" class="h-5 sm:h-6 w-5 sm:w-6 mr-2" width="24" height="24">
-          </picture>
-          Listen on Apple Podcasts
-        </a>
-        <a href="https://open.spotify.com/show/3sfSQ2hlgM2OSObYGhWGe1"
-           class="flex items-center justify-center bg-green-600 text-white font-semibold py-2 px-4 rounded hover:bg-green-500 transition-transform transform hover:scale-105 duration-300"
-           aria-label="Listen to Dafsplaining on Spotify">
-          <picture>
-            <source srcset="/images/spotifylogo.webp" type="image/webp">
-            <img src="/images/spotifylogo.png" alt="Spotify" class="h-5 sm:h-6 w-5 sm:w-6 mr-2" width="24" height="24">
-          </picture>
-          Listen on Spotify
-        </a>
-      </div>
-      <p class="text-base sm:text-lg text-gray-700 text-center">
-        Contact us at <a href="mailto:dafsplaining@gmail.com" class="text-blue-600 hover:underline">dafsplaining@gmail.com</a>
-      </p>
+<body>
+    <div class="container">
+        <img src="DAFYOMIMosheMustacchiLOGO.png" alt="Daf Yomi Logo" class="logo">
+        <h1>Daf Yomi with Rabbi Moshe Mustacchi</h1>
+        <p>Join Rabbi Moshe Mustacchi’s fast, clear, and high-quality Daf Yomi shiur, featuring authentic Sephardic pronunciation. Quicker than other "Quick Daf" options, it’s perfect for Sephardim and anyone seeking efficient Talmud study. Delivered a day early with crisp audio, it’s ideal for learning on the go. Now’s the perfect time to join the 14th Daf Yomi cycle (2020–2027). Start today!</p>
+        <div class="button-container">
+            <a href="https://podcasts.apple.com/us/podcast/daf-yomi-with-rabbi-moshe-mustacchi/id1493850850" class="button">
+                <img src="applepodcastlogo.png" alt="Apple Podcasts" class="button-icon">
+            </a>
+            <a href="https://open.spotify.com/show/5oESbPJbb6R4exm925pfk0" class="button">
+                <img src="spotifylogo.png" alt="Spotify" class="button-icon">
+            </a>
+            <a href="https://itorah.com/browse-lectures/all/rabbi-moshe-mustacchi/all-categories/all-subcategories/all-languages/all-dates" class="button">
+                <img src="itorahlogo.png" alt="iTorah" class="button-icon">
+            </a>
+        </div>
     </div>
-    <footer class="mt-6 sm:mt-8 bg-gray-800 text-white text-center py-3 sm:py-4 w-full">
-      <p class="text-sm sm:text-base">© 2025 Dafsplaining. All rights reserved.</p>
-    </footer>
-  </div>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('content').classList.add('visible');
-    });
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-X"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXX-X');
-  </script>
 </body>
 </html>
