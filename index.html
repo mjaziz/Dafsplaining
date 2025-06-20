@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dafsplaining - Daily Weekday Daf Shiur</title>
-    <link rel="icon" type="image/png" href="Dafsplaining PodcastLogo.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join Dafsplaining for a daily weekday Daf Shiur at BJSZ in Baltimore, honoring Rav Chaim Zev ben Rav Avraham Aharon Halevi zt”l.">
+  <meta name="keywords" content="Dafsplaining, Daf Shiur, Talmud, Jewish learning, Baltimore, BJSZ">
+  <meta property="og:title" content="Dafsplaining - Daily Weekday Daf Shiur">
+  <meta property="og:description" content="Daily weekday Daf Shiur at BJSZ in Baltimore, dedicated to Rav Chaim Zev ben Rav Avraham Aharon Halevi zt”l.">
+  <meta property="og:image" content="/images/Dafsplaining PodcastLogo.png">
+  <title>Dafsplaining - Daily Weekday Daf Shiur</title>
+  <link rel="icon" type="image/png" href="/images/Dafsplaining PodcastLogo.png">
+  <link rel="stylesheet" href="/path/to/tailwind.css">
+  <style>
+    .fade-in {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .fade-in:not(.visible) {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  </style>
 </head>
 <body class="bg-gray-100 font-sans">
-    <div id="content" class="fade-in min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl w-full bg-white shadow-lg rounded-lg p-8">
-            <div class="flex justify-center mb-6 transition-transform duration-300 hover:scale-105">
-                <img src="Dafsplaining PodcastLogo.png" alt="Dafsplaining Logo" class="h-24 w-auto">
-            </div>
-            <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">Dafsplaining</h1>
-            <h2 class="text-2xl font-semibold text-center text-gray-600 mb-4">Daily Weekday Daf Shiur</h2>
-            <p class="text-lg text-gray-700 text-center mb-6">
-                Join us for the Daily Weekday Daf Shiur, given at BJSZ in Baltimore at 5:35 AM, 
-                <em>leilui nishmas</em> Rav Chaim Zev ben Rav Avraham Aharon Halevi zt”l, 
-                who always pushed us to learn more and would be astonished by our consistency in his honor.
-            </p>
-            <p class="text-lg text-gray-700 text-center mb-6">
-                Special mention to Joseph Dov and Andrew, who carried the shiur during the COVID pandemic of 2020, 
-                and as always to Matt for technical support.
-            </p>
-            <div class="flex justify-center space-x-4 mb-6">
-                <a href="https://podcasts.apple.com/us/podcast/dafsplaining/id1502395874"
-                   class="flex items-center bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">
-                    <img src="applepodcastlogo.png" alt="Apple Podcasts" class="h-6 w-6 mr-2">
-                    Listen on Apple Podcasts
-                </a>
-                <a href="https://open.spotify.com/show/3sfSQ2hlgM2OSObYGhWGe1"
-                   class="flex items-center bg-green-600 text-white font-semibold py-2 px-4 rounded hover:bg-green-500 transition-transform transform hover:scale-105 duration-300">
-                    <img src="spotifylogo.png" alt="Spotify" class="h-6 w-6 mr-2">
-                    Listen on Spotify
-                </a>
-            </div>
-            <p class="text-lg text-gray-700 text-center">
-                Contact us at <a href="mailto:dafsplaining@gmail.com" class="text-blue-600 hover:underline">dafsplaining@gmail.com</a>
-            </p>
-        </div>
-        <footer class="mt-8 text-gray-600 text-center">
-            <p>&copy; 2025 Dafsplaining. All rights reserved.</p>
-        </footer>
+  <div id="content" class="fade-in min-h-screen flex flex-col items-center justify-center py-8 px-4 sm:px-6 md:px-8">
+    <div class="max-w-3xl w-full bg-white shadow-lg rounded-lg p-6 sm:p-8">
+      <div class="flex justify-center mb-4 sm:mb-6 transition-transform duration-300 hover:scale-105">
+        <picture>
+          <source srcset="/images/Dafsplaining PodcastLogo.webp" type="image/webp">
+          <img src="/images/Dafsplaining PodcastLogo.png" alt="Dafsplaining Logo" class="h-20 sm:h-24 w-auto" width="96" height="96">
+        </picture>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-4 sm:mb-6">Dafsplaining</h1>
+      <h2 class="text-xl sm:text-2xl font-semibold text-center text-gray-600 mb-3 sm:mb-4">Daily Weekday Daf Shiur</h2>
+      <p class="text-base sm:text-lg text-gray-700 text-center mb-4 sm:mb-6">
+        Join us for the Daily Weekday Daf Shiur, given at BJSZ in Baltimore at 5:35 AM, 
+        <em>leilui nishmas</em> Rav Chaim Zev ben Rav Avraham Aharon Halevi zt”l, 
+        who always pushed us to learn more and would be astonished by our consistency in his honor.
+      </p>
+      <p class="text-base sm:text-lg text-gray-700 text-center mb-4 sm:mb-6">
+        Special mention to Joseph Dov and Andrew, who carried the shiur during the COVID pandemic of 2020, 
+        and as always to Matt for technical support.
+      </p>
+      <p class="text-base sm:text-lg text-gray-700 text-center mb-4 sm:mb-6 font-semibold">
+        Subscribe now for daily Talmud learning updates!
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-4 sm:mb-6">
+        <a href="https://podcasts.apple.com/us/podcast/dafsplaining/id1502395874"
+           class="flex items-center justify-center bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300"
+           aria-label="Listen to Dafsplaining on Apple Podcasts">
+          <picture>
+            <source srcset="/images/applepodcastlogo.webp" type="image/webp">
+            <img src="/images/applepodcastlogo.png" alt="Apple Podcasts" class="h-5 sm:h-6 w-5 sm:w-6 mr-2" width="24" height="24">
+          </picture>
+          Listen on Apple Podcasts
+        </a>
+        <a href="https://open.spotify.com/show/3sfSQ2hlgM2OSObYGhWGe1"
+           class="flex items-center justify-center bg-green-600 text-white font-semibold py-2 px-4 rounded hover:bg-green-500 transition-transform transform hover:scale-105 duration-300"
+           aria-label="Listen to Dafsplaining on Spotify">
+          <picture>
+            <source srcset="/images/spotifylogo.webp" type="image/webp">
+            <img src="/images/spotifylogo.png" alt="Spotify" class="h-5 sm:h-6 w-5 sm:w-6 mr-2" width="24" height="24">
+          </picture>
+          Listen on Spotify
+        </a>
+      </div>
+      <p class="text-base sm:text-lg text-gray-700 text-center">
+        Contact us at <a href="mailto:dafsplaining@gmail.com" class="text-blue-600 hover:underline">dafsplaining@gmail.com</a>
+      </p>
     </div>
+    <footer class="mt-6 sm:mt-8 bg-gray-800 text-white text-center py-3 sm:py-4 w-full">
+      <p class="text-sm sm:text-base">© 2025 Dafsplaining. All rights reserved.</p>
+    </footer>
+  </div>
 
-    <script>
-        // Fade in animation on load
-        window.addEventListener('DOMContentLoaded', () => {
-            const content = document.getElementById('content');
-            setTimeout(() => content.classList.add('visible'), 100);
-        });
-    </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('content').classList.add('visible');
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXX-X');
+  </script>
 </body>
 </html>
-
